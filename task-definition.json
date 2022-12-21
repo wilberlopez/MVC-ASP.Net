@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/pruebaw",
+      "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/pruebaw-defi",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -46,18 +46,18 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "pruebaw"
+      "name": "pruebaw-defi"
     }
   ],
   "placementConstraints": [],
-  "memory": "512",
+  "memory": "2048",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/pruebaw:1",
-  "family": "pruebaw",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/pruebaw2:1",
+  "family": "pruebaw2",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -72,7 +72,7 @@
   ],
   "networkMode": null,
   "runtimePlatform": null,
-  "cpu": "1024",
+  "cpu": "2048",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
