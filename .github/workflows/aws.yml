@@ -32,11 +32,11 @@ on:
 
 env:
   AWS_REGION: us-west-1
-  ECR_REPOSITORY: pruebaw-defi
-  ECS_SERVICE: miservicio1
-  ECS_CLUSTER: micluster1
+  ECR_REPOSITORY: paradox
+  ECS_SERVICE: paradox-servicio
+  ECS_CLUSTER: paradox2
   ECS_TASK_DEFINITION: task-definition.json
-  CONTAINER_NAME: pruebaw-defi
+  CONTAINER_NAME: paradox
 
 permissions:
   contents: read
