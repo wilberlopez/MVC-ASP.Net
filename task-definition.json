@@ -7,7 +7,18 @@
       "environmentFiles": null,
       "logConfiguration": null,
       "entryPoint": [],
-      "portMappings": [],
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        },
+        {
+          "hostPort": 443,
+          "protocol": "tcp",
+          "containerPort": 443
+        }
+      ],
       "command": [],
       "linuxParameters": null,
       "cpu": 0,
@@ -50,8 +61,8 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/crear-instancia1:1",
-  "family": "crear-instancia1",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/crear-instancia2:1",
+  "family": "crear-instancia2",
   "requiresAttributes": [
     {
       "targetId": null,
