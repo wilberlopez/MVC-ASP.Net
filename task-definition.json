@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/paradox-tarea:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/px-tarea:1",
   "containerDefinitions": [
       {
           "name": "paradox",
-          "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/paradox",
+          "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/paradox:527c12d5360f0750d6cb7843c83f7f8ecd9998a6",
           "cpu": 0,
           "links": [],
           "portMappings": [
@@ -39,7 +39,7 @@
           "systemControls": []
       }
   ],
-  "family": "paradox-tarea",
+  "family": "px-tarea",
   "executionRoleArn": "arn:aws:iam::710355623824:role/ecsTaskExecutionRole",
   "networkMode": "bridge",
   "revision": 1,
@@ -72,7 +72,7 @@
       "cpuArchitecture": "X86_64",
       "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2022-12-22T21:14:11.796Z",
+  "registeredAt": "2022-12-22T21:32:10.500Z",
   "registeredBy": "arn:aws:iam::710355623824:root",
   "tags": [
       {
@@ -81,7 +81,7 @@
       },
       {
           "key": "ecs:taskDefinition:stackId",
-          "value": "arn:aws:cloudformation:us-west-1:710355623824:stack/ECS-Console-V2-TaskDefinition-7e8d6433-b49b-4afa-9737-ceb470a56b66/91b8b290-823d-11ed-8ef6-06782208d7c7"
+          "value": "arn:aws:cloudformation:us-west-1:710355623824:stack/ECS-Console-V2-TaskDefinition-4c0baf83-c8c5-4106-9ae5-ddac2d2d87a2/14e56850-8240-11ed-b35e-06c25948cbcf"
       }
   ]
 }

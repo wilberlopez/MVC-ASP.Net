@@ -33,7 +33,7 @@ on:
 env:
   AWS_REGION: us-west-1
   ECR_REPOSITORY: paradox
-  ECS_SERVICE: paradox-servicio
+  ECS_SERVICE: px-service
   ECS_CLUSTER: paradox2
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: paradox
