@@ -1,44 +1,32 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/px-tarea:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/px-tarea:4",
   "containerDefinitions": [
       {
           "name": "paradox",
-          "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/paradox",
+          "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/paradox:687db5b9a5fcdac6d5b96343d8914582d5531f40",
           "cpu": 0,
-          "links": [],
           "portMappings": [
-            {
-              "hostPort": 80,
-              "protocol": "tcp",
-              "containerPort": 80
-            },
-            {
-              "hostPort": 443,
-              "protocol": "tcp",
-              "containerPort": 443
-            }
+              {
+                  "containerPort": 80,
+                  "hostPort": 80,
+                  "protocol": "tcp"
+              },
+              {
+                  "containerPort": 443,
+                  "hostPort": 443,
+                  "protocol": "tcp"
+              }
           ],
           "essential": true,
-          "entryPoint": [],
-          "command": [],
           "environment": [],
-          "environmentFiles": [],
           "mountPoints": [],
-          "volumesFrom": [],
-          "secrets": [],
-          "dnsServers": [],
-          "dnsSearchDomains": [],
-          "extraHosts": [],
-          "dockerSecurityOptions": [],
-          "dockerLabels": {},
-          "ulimits": [],
-          "systemControls": []
+          "volumesFrom": []
       }
   ],
   "family": "px-tarea",
   "executionRoleArn": "arn:aws:iam::710355623824:role/ecsTaskExecutionRole",
   "networkMode": "bridge",
-  "revision": 1,
+  "revision": 4,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -46,17 +34,12 @@
           "name": "com.amazonaws.ecs.capability.ecr-auth"
       },
       {
-          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
-      },
-      {
           "name": "ecs.capability.execution-role-ecr-pull"
-      },
-      {
-          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
       }
   ],
   "placementConstraints": [],
   "compatibilities": [
+      "EXTERNAL",
       "EC2"
   ],
   "requiresCompatibilities": [
@@ -68,8 +51,8 @@
       "cpuArchitecture": "X86_64",
       "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2022-12-22T21:32:10.500Z",
-  "registeredBy": "arn:aws:iam::710355623824:root",
+  "registeredAt": "2022-12-22T22:01:24.802Z",
+  "registeredBy": "arn:aws:iam::710355623824:user/wilber",
   "tags": [
       {
           "key": "ecs:taskDefinition:createdFrom",
