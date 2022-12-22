@@ -31,7 +31,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": null,
+      "memoryReservation": 500,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/pruebaw-defi",
@@ -55,14 +55,14 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "4096",
+  "memory": "1024",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/tarea5:1",
-  "family": "tarea5",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/tarea6:1",
+  "family": "tarea6",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -83,7 +83,7 @@
   ],
   "networkMode": null,
   "runtimePlatform": null,
-  "cpu": "4096",
+  "cpu": "1024",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
