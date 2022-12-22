@@ -33,7 +33,7 @@ on:
 env:
   AWS_REGION: us-west-1
   ECR_REPOSITORY: pruebaw-defi
-  ECS_SERVICE: servicio1
+  ECS_SERVICE: miservicio1
   ECS_CLUSTER: micluster1
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: pruebaw-defi
