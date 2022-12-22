@@ -7,13 +7,7 @@
       "environmentFiles": null,
       "logConfiguration": null,
       "entryPoint": [],
-      "portMappings": [
-        {
-          "hostPort": 80,
-          "protocol": "tcp",
-          "containerPort": 80
-        }
-      ],
+      "portMappings": [],
       "command": [],
       "linuxParameters": null,
       "cpu": 0,
@@ -56,8 +50,8 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/pruebaw2:1",
-  "family": "pruebaw2",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/crear-instancia1:1",
+  "family": "crear-instancia1",
   "requiresAttributes": [
     {
       "targetId": null,
