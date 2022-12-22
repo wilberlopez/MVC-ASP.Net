@@ -3,7 +3,7 @@
   "containerDefinitions": [
       {
           "name": "paradox",
-          "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/paradox:527c12d5360f0750d6cb7843c83f7f8ecd9998a6",
+          "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/paradox",
           "cpu": 0,
           "links": [],
           "portMappings": [
