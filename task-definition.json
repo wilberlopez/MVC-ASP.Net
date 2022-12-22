@@ -31,7 +31,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": 500,
+      "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/pruebaw-defi",
@@ -61,20 +61,14 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/tarea6:1",
-  "family": "tarea6",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/tarea1:1",
+  "family": "tarea1",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
     }
   ],
   "pidMode": null,
