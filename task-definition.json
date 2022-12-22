@@ -21,7 +21,7 @@
       ],
       "command": [],
       "linuxParameters": null,
-      "cpu": 0,
+      "cpu": 1024,
       "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
@@ -31,7 +31,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": null,
+      "memoryReservation": 500,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "710355623824.dkr.ecr.us-west-1.amazonaws.com/pruebaw-defi",
@@ -55,20 +55,26 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "2048",
+  "memory": "4096",
   "taskRoleArn": null,
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/crear-instancia2:1",
-  "family": "crear-instancia2",
+  "taskDefinitionArn": "arn:aws:ecs:us-west-1:710355623824:task-definition/tarea5:1",
+  "family": "tarea5",
   "requiresAttributes": [
     {
       "targetId": null,
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
     }
   ],
   "pidMode": null,
@@ -77,7 +83,7 @@
   ],
   "networkMode": null,
   "runtimePlatform": null,
-  "cpu": "2048",
+  "cpu": "4096",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
