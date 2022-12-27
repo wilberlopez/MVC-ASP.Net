@@ -3,9 +3,9 @@ name: Deploy on test server
 on:
   push:
     branches: ["main"]
+jobs:
   env:
     DOTNET_INSTALL_DIR: "./.dotnet"
-jobs:
   build:
     runs-on: self-hosted
     steps:
